@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/image/fondotimba.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px; /* Añadir padding a los lados para evitar el desbordamiento en pantallas pequeñas */
+}
+
+.container {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 1rem; /* Usar unidades relativas */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Limitar el ancho máximo para pantallas más grandes */
+}
+
+.logo {
+    width: 20%; /* Usar porcentaje para adaptarse al contenedor */
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem; /* Usar unidades relativas */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+.button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgb(4, 236, 62);
+    font-size: 1.5rem; /* Usar unidades relativas */
+    width: 100%;
+    transition: background-color 0.3s; /* Suavizar el cambio de color */
+}
+
+.button img {
+    width: 1rem; /* Usar unidades relativas */
+    margin-left: 0.5rem;
+}
+
+.button:hover {
+    background-color: #333333;
+}
+
+.minimo {
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.875rem; /* Usar unidades relativas */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Reducir padding en pantallas más pequeñas */
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .button {
+        font-size: 1.25rem; /* Reducir el tamaño de fuente en pantallas medianas */
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 25%; /* Ajustar el tamaño del logo en pantallas pequeñas */
+        max-width: 80px;
+    }
+
+    .button {
+        font-size: 1rem; /* Reducir el tamaño de fuente en pantallas pequeñas */
+        padding: 0.5rem;
+    }
+
+    h2, h3 {
+        font-size: 1.2em; /* Ajustar los títulos en pantallas pequeñas */
+    }
+
+    input[type="text"] {
+        padding: 0.5rem; /* Reducir el padding de los inputs */
+    }
+}
