@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,22 +17,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 0 20px; /* Añadir padding a los lados para evitar el desbordamiento en pantallas pequeñas */
+    padding: 0 20px; 
 }
 
 .container {
     text-align: center;
     background-color: #1f1f1f;
-    padding: 1rem; /* Usar unidades relativas */
+    padding: 1.2rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.5rem rgb(1, 104, 27);
+    box-shadow: 0 0 5rem #02aa56;
     width: 100%;
-    max-width: 400px; /* Limitar el ancho máximo para pantallas más grandes */
+    max-width: 500px;
 }
 
 .logo {
-    width: 100%; /* Usar porcentaje para adaptarse al contenedor */
-    max-width: 110px;
+    width: 100%;
+    max-width: 160px;
     margin-bottom: 0.25rem;
 }
 
@@ -43,45 +45,51 @@ form {
     margin-top: 1rem;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 0.75rem; /* Usar unidades relativas */
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    outline: none;
-}
 
-.button {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #024e0669;
-    color: white;
-    padding: 0.80rem;
-    border: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    box-shadow: 0 0 0.5rem rgb(4, 236, 62);
-    font-size: 1.5rem; /* Usar unidades relativas */
-    width: 100%;
-    transition: background-color 0.3s; /* Suavizar el cambio de color */
-}
-
-.button img {
-    width: 1rem; /* Usar unidades relativas */
-    margin-left: 0.5rem;
-}
-
-.button:hover {
-    background-color: #027c2b;
-}
+button{
+    background:#02aa56;
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    color:white;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:500ms ease all;
+    outline:none;
+    border-radius: 1rem;
+  }
+  button:hover{
+    background:#1f1f1f;
+    color:#02aa56;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #02aa56;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:500ms ease all;
+  }
 
 .minimo {
     margin-top: 1rem;
     color: #888;
-    font-size: 0.875rem; /* Usar unidades relativas */
+    font-size: 0.875rem; 
 }
 
 .testh2 {
@@ -90,7 +98,7 @@ input[type="text"] {
 
 @media (max-width: 768px) {
     body {
-        padding: 0 10px; /* Reducir padding en pantallas más pequeñas */
+        padding: 0 10px; 
     }
 
     .container {
@@ -98,27 +106,27 @@ input[type="text"] {
     }
 
     .button {
-        font-size: 1.25rem; /* Reducir el tamaño de fuente en pantallas medianas */
+        font-size: 1.25rem; 
         padding: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        width: 25%; /* Ajustar el tamaño del logo en pantallas pequeñas */
+        width: 25%; 
         max-width: 80px;
     }
 
     .button {
-        font-size: 1rem; /* Reducir el tamaño de fuente en pantallas pequeñas */
+        font-size: 1rem; 
         padding: 0.5rem;
     }
 
     h2, h3 {
-        font-size: 1.2em; /* Ajustar los títulos en pantallas pequeñas */
+        font-size: 1.2em; 
     }
 
     input[type="text"] {
-        padding: 0.5rem; /* Reducir el padding de los inputs */
+        padding: 0.5rem; 
     }
 }
