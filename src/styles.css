@@ -1,132 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
-
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+    height: 100%;
     font-family: Arial, sans-serif;
+}
+.container {
     background-image: url('image/Fondotimba2.jpg');
-    background-color: #1f1f1f;
     background-size: cover;
     background-position: center;
-    /* color: white; */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 20px; 
 }
-
-.container {
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #10B981;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
     text-align: center;
-    background-color: #1f1f1f;
-    padding: 1.2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 5rem #02aa56;
-    width: 100%;
-    max-width: 500px;
 }
-
 .logo {
-    width: 100%;
-    max-width: 160px;
-    margin-bottom: 0.25rem;
+    color: #10B981;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
-
-h2, h3 {
+.text {
     color: white;
-    margin-bottom: 0.5rem;
+    margin-bottom: 20px;
 }
-
-form {
-    margin-top: 1rem;
+.button {
+    background-color: #10B981;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
 }
-
-
-button{
-    background:#02aa56;
-    font-family: Arial, sans-serif;
-    font-style: bold;
-    color:white;
-    border:none;
-    position:relative;
-    height:60px;
-    font-size:1.6em;
-    padding:0 2em;
-    cursor:pointer;
-    transition:500ms ease all;
-    outline:none;
-    border-radius: 1rem;
-  }
-  button:hover{
-    background:#1f1f1f;
-    color:#02aa56;
-  }
-  button:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #02aa56;
-    transition:400ms ease all;
-  }
-  button:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  button:hover:before,button:hover:after{
-    width:100%;
-    transition:500ms ease all;
-  }
-
-.minimo {
-    margin-top: 1rem;
-    color: #888;
-    font-size: 0.875rem; 
+.button:hover {
+    background-color: #059669;
+    color: white;
+    transform: scale(1.05);
 }
-
-.testh2 {
-    padding-bottom: 9px;
+/* .button:hover::after {
+    content: '¡OBTÉN TU USUARIO!'; 
+}*/
+.button span {
+    display: inline-block;
 }
-
-@media (max-width: 768px) {
-    body {
-        padding: 0 10px; 
-    }
-
-    .container {
-        padding: 1rem;
-    }
-
-    .button {
-        font-size: 1.25rem; 
-        padding: 0.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 25%; 
-        max-width: 80px;
-    }
-
-    .button {
-        font-size: 1rem; 
-        padding: 0.5rem;
-    }
-
-    h2, h3 {
-        font-size: 1.2em; 
-    }
-
-    input[type="text"] {
-        padding: 0.5rem; 
-    }
+.button:hover span {
+    display: none;
 }
