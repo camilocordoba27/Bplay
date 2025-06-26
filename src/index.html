@@ -3,23 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Online</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Bplay</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="image/bplaysinfondonew.png" alt="Bplay Logo" class="logo" width="150px">
-            <p class="text">Para obtener la promoción habla con unos de nuestros agentes enviándonos un WhatsApp</p>
-            <button class="button" type="button" onclick="redirectToPage()">QUIERO MI USUARIO</button>
+    <!-- Partículas flotantes -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Contenido principal -->
+    <div class="main-container">
+        <div class="content-wrapper" id="contentWrapper">
+            
+            <!-- Logo y título -->
+            <div class="header-section">
+               
+                <p class="subtitle">Casino Online</p>
+            </div>
+
+            <!-- Tarjeta principal -->
+            <div class="main-card">
+                <div class="card-content">
+                    
+                    <!-- Badge de promoción -->
+                    <div class="promo-badge">
+                        <!-- Icono de regalo SVG -->
+                        PROMOCIÓN ESPECIAL
+                    </div>
+
+                    <!-- Título principal -->
+                    <h2 class="card-title">¡Obtén tu Usuario!</h2>
+
+                    <!-- Descripción -->
+                    <p class="card-description">
+                        Para acceder a nuestras <span class="highlight">promociones exclusivas</span> y
+                        comenzar a ganar, habla con uno de nuestros agentes especializados
+                    </p>
+
+                    <!-- Features grid -->
+                    <div class="features-grid">
+                        <div class="feature-item feature-green">
+                            <!-- Icono de rayo SVG -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                            </svg>
+                            <span>Registro Rápido</span>
+                        </div>
+                        <div class="feature-item feature-blue">
+                            <!-- Icono de estrella SVG -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <span>Bonos VIP</span>
+                        </div>
+                        <div class="feature-item feature-purple">
+                            <!-- Icono de sparkles SVG -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                                <path d="M5 3v4"/>
+                                <path d="M19 17v4"/>
+                                <path d="M3 5h4"/>
+                                <path d="M17 19h4"/>
+                            </svg>
+                            <span>Soporte 24/7</span>
+                        </div>
+                    </div>
+
+                    <!-- Botón principal -->
+                    <button class="cta-button" id="whatsappBtn">
+                        <!-- Icono de WhatsApp SVG -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                        </svg>
+                        QUIERO MI USUARIO
+                    </button>
+
+                    <p class="whatsapp-text">Te conectaremos directamente con WhatsApp</p>
+                </div>
+            </div>
+
+            <!-- Features bottom
+            <div class="bottom-features">
+                <div class="feature-card">
+                    <h3 class="feature-title">🎰 Juegos Premium</h3>
+                    <p class="feature-text">Accede a los mejores slots, ruleta, blackjack y más juegos exclusivos</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">💰 Bonos Increíbles</h3>
+                    <p class="feature-text">Recibe bonos de bienvenida y promociones especiales para usuarios VIP</p>
+                </div>
+            </div> -->
         </div>
     </div>
-</body>
-<script>
-    function redirectToPage() {
-        window.location.href = 'https://wa.link/r751me';
-    }
-</script>
 
+    <script src="script.js"></script>
+</body>
 </html>
